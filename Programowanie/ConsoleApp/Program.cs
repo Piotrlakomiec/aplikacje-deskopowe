@@ -3,6 +3,16 @@
 Console.Write("Hello, World!");
 Console.WriteLine("Hello, World!");
 
+string name = "Jan";
+string surname = "Kowalski";
+
+Console.WriteLine("Witaj " + name + " " + surname + "tutaj!!!!");
+Console.WriteLine("Witaj {0} {1} tutaj!!!!",name,surname);
+Console.WriteLine($"Witaj {name} {surname} tutaj!!!!");
+
+Console.WriteLine("Predkość to km\\h");
+Console.WriteLine(@"Predkość to km\h");
+
 /*
 Zmienna - pewien obszar w pamięci operacyjnej, w której można
 w danej chwili przechować tylko jedną daną.
