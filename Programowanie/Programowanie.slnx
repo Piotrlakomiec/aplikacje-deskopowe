@@ -1,3 +1,37 @@
 <Solution>
-  <Project Path="ConsoleApp/ConsoleApp.csproj" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/C#/">
+    <Project Path="ConsoleApp/ConsoleApp.csproj" />
+  </Folder>
+  <Folder Name="/C++/" />
+  <Folder Name="/C++/Strukturalne/" />
+  <Folder Name="/C++/Strukturalne/01.Basics/" />
+  <Folder Name="/C++/Strukturalne/01.Basics/instructionIfConsoleApplication/">
+    <Project Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/01. Basics/BasicsConsoleApplication/BasicsConsoleApplication.vcxproj" Id="9ad43af2-e908-46d9-b58b-d8b6ac2af849" />
+  </Folder>
+  <Folder Name="/C++/Strukturalne/02.Variable/" />
+  <Folder Name="/C++/Strukturalne/02.Variable/LoopDoWhileConsoleApplication/">
+    <File Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/02. Variable/VariableConsoleApplication/VariableConsoleApplication.cpp" />
+    <File Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/02. Variable/VariableConsoleApplication/VariableConsoleApplication.vcxproj" />
+    <File Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/02. Variable/VariableConsoleApplication/VariableConsoleApplication.vcxproj.filters" />
+  </Folder>
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/" />
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/01.Instruction If/" />
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/01.Instruction If/InstructionIfConsoleApplication/">
+    <File Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/03. Decision instructions/01. Instruction If/InstructionIfConsoleApplication/InstructionIfConsoleApplication.cpp" />
+    <File Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/03. Decision instructions/01. Instruction If/InstructionIfConsoleApplication/InstructionIfConsoleApplication.vcxproj" />
+    <File Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/03. Decision instructions/01. Instruction If/InstructionIfConsoleApplication/InstructionIfConsoleApplication.vcxproj.filters" />
+  </Folder>
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/02.Loop DoWhile/" />
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/02.Loop DoWhile/LoopDoWhileConsoleApplication/">
+    <Project Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/03. Decision instructions/02. Loop DoWhile/LoopDoWhileConsoleApplication/LoopDoWhileConsoleApplication.vcxproj" Id="3d6894d8-a674-46e6-aa09-055296aabd9b" />
+  </Folder>
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/03.Loop While/" />
+  <Folder Name="/C++/Strukturalne/03.Decision instructions/03.Loop While/LoopWhileConsoleApplication/">
+    <Project Path="../../klasa-3B-2026-2027/Programowanie/C++/Strukturalne/03. Decision instructions/03. Loop While/LoopWhileConsoleApplication/LoopWhileConsoleApplication.vcxproj" Id="b82a4bd7-990c-4561-91dc-7a407b778409" />
+  </Folder>
 </Solution>
