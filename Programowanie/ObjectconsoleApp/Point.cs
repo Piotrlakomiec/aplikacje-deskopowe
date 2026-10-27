@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ObjectConsoleApp;
 
-internal class Point
+internal class Point : Object
 {
-    public int x;
+    protected int x;
     public int X
     {
         set
@@ -39,7 +39,14 @@ internal class Point
 
     public int Y { get; set; }
 
-    private string description = "Hello";
+    protected string description = "Hello";
+
+    public string Description
+    {
+        get { return description; }
+        set { description = value; }
+    }
+
 
     public void SetX(int value)
     {
@@ -55,6 +62,22 @@ internal class Point
         //    błąd
     }
 
+    public Point()
+    {
+        Console.WriteLine("Działa konstruktor");
+    }
+
+    public Point(int x, int y)
+    {
+        X = x;
+        Y = y;
+    }
+
+    public double GetDistanceToCenter()
+    {
+        return Math.Sqrt(x * x + Y * Y);
+    }
+
 
     public void Show()
     {
@@ -64,3 +87,29 @@ internal class Point
         Console.WriteLine($"y = {Y}");
     }
 }
+
+/*
+ Modyfikatory klas
+ 
+| Modyfikator                                  | Ta sama klasa | Klasa zawierająca | Klasy pochodne(ten sam assembly)  | Klasy pochodne(inny assembly)  | Inne klasy w tym samym assembly | Inne klasy w innym assembly |
+| -------------------------------------------  | ------------- | ----------------- | --------------------------------- | ------------------------------ | ------------------------------- | --------------------------- |
+| ** public** (top-level/zagnieżdżona)         | ✅            | ✅               | ✅                                | ✅                             | ✅                               | ✅                           |
+| ** internal** (top-level/zagnieżdżona)       | ✅            | ✅               | ✅                                | ❌                             | ✅                               | ❌                           |
+| ** private** (tylko zagnieżdżona)            | ✅            | ✅               | ❌                                | ❌                             | ❌                               | ❌                           |
+| ** protected** (tylko zagnieżdżona)          | ✅            | ✅               | ✅                                | ✅                             | ❌                               | ❌                           |
+| ** protected internal** (tylko zagnieżdżona) | ✅            | ✅               | ✅                                | ✅                             | ✅                               | ❌                           |
+| ** private protected** (tylko zagnieżdżona)  | ✅            | ✅               | ✅                                | ❌                             | ❌                               | ❌                           |
+
+Modyfikatory przy członkach klas (pola, właściwości, metody itd.)
+
+| Modyfikator          | Dostęp w tej klasie | Klasy pochodne                 | Ten sam assembly | Inny assembly        |
+| -------------------- | ------------------- | ------------------------------ | ---------------- | -------------------- |
+| `public`             | ✅                  | ✅                              | ✅                | ✅                    |
+| `private`            | ✅                  | ❌                              | ❌                | ❌                    |
+| `protected`          | ✅                  | ✅                              | ❌                | ❌                    |
+| `internal`           | ✅                  | ✅ (jeśli w tym samym assembly) | ✅                | ❌                    |
+| `protected internal` | ✅                  | ✅                              | ✅                | ✅ (jeśli dziedziczy) |
+| `private protected`  | ✅                  | ✅ (tylko w tym samym assembly) | ✅                | ❌                    |
+
+
+*/
