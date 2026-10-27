@@ -5,19 +5,19 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/C#/" />
-  <Folder Name="/C#/01.Console/">
+  <Folder Name="/C#/01.FirstConsoleApp/" Id="95d55df8-1a24-a464-fa02-8c5fdad01eb4">
     <Project Path="FirstConsoleApp/FirstConsoleApp.csproj" />
   </Folder>
-  <Folder Name="/C#/02.Value Types/">
+  <Folder Name="/C#/02.ValueTypesConsoleApp/" Id="0d568ea7-c282-cdb2-db7a-15743119c875">
     <Project Path="value_types/ValueTypesConsoleApp.csproj" Id="49b98b25-2e36-4ff5-a382-e1f370faa77c" />
   </Folder>
-  <Folder Name="/C#/03.Reference types/">
+  <Folder Name="/C#/03.ReferenceTypesConsoleApp/" Id="22b42ec3-529d-8f0e-d1e8-d57fbe022ead">
     <Project Path="ReferenceTypesConsoleApp/ReferenceTypesConsoleApp.csproj" Id="93847708-48f9-4bbd-b032-0dc5fa15d036" />
   </Folder>
-  <Folder Name="/C#/04.ObjectConsoleApp/">
+  <Folder Name="/C#/04.ObjectConsoleApp/" Id="5e902012-f0fe-bb47-29df-59cb9f50539d">
     <Project Path="ObjectconsoleApp/ObjectconsoleApp.csproj" Id="0225db97-5598-4c5d-9b80-e40c5c9caaa8" />
   </Folder>
-  <Folder Name="/C#/05.PrinterTaskConsoleApp/">
+  <Folder Name="/C#/05.PrinterTaskConsoleApp/" Id="8c4b2231-27c5-0a52-8276-72871e2406dd">
     <Project Path="PrinterTaskConsoleApp/PrinterTaskConsoleApp.csproj" Id="3d4b4193-cb1b-4549-8415-92909302dab6" />
   </Folder>
   <Folder Name="/C++/" />
