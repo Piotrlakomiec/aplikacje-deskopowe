@@ -4,19 +4,44 @@ using System.Text;
 
 namespace PrinterTaskConsoleApp
 {
+
     internal class Printer
     {
-        int Name { get; set; }
+        public string Name { get; set; }
 
-        private int PaperCount;
+        private int paperCount;
 
-
-        int PCount { get; set; }
-
-        public void Show()
+        public int PaperCount
         {
-            Console.WriteLine("Wydruk:");
-
+            get
+            {
+                return paperCount;
+            }
+            set
+            {
+                if (value >= 0)
+                {
+                    paperCount = value;
+                }
+            }
         }
+
+        public Printer(string name, int count)
+        {
+            Name = name;
+            PaperCount = count;
+        }
+
+        public bool Print(int pageCount)
+        {
+            if (pageCount > 0 && pageCount <= PaperCount)
+            {
+                PaperCount -= pageCount;
+                return true;
+            }
+
+            return false;
+        }
+
     }
 }

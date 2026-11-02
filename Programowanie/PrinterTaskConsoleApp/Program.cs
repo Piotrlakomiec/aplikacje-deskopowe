@@ -12,9 +12,29 @@ Napisz program obsługujący wydruk na wybranej drukarce.
 */
 
 using PrinterTaskConsoleApp;
-using System.Drawing;
-            
-Printer printer;
-printer = new Printer();
+using System;
 
-printer.Show();
+Printer printer = new Printer("Drukarka", 10);
+
+Printer selectedPrinter = printer;
+
+int count = printer.PaperCount;
+
+Console.WriteLine("Podaj liczbe stron:");
+string tekst = Console.ReadLine();
+
+int strony;
+
+if (int.TryParse(tekst, out strony))
+{
+    bool wynik = selectedPrinter.Print(strony);
+    Console.WriteLine(wynik);
+}
+else
+{
+    Console.WriteLine("Blad!");
+}
+
+Console.WriteLine(printer.PaperCount);
+Console.WriteLine(selectedPrinter.PaperCount);
+Console.WriteLine(count);
