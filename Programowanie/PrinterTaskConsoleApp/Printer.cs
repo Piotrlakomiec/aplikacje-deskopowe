@@ -36,7 +36,7 @@ namespace PrinterTaskConsoleApp
         {
             if (pageCount > 0 && pageCount <= PaperCount)
             {
-                PaperCount -= pageCount;
+                PaperCount = PaperCount - pageCount;
                 return true;
             }
 

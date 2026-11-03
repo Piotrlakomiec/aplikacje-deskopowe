@@ -21,20 +21,19 @@ Printer selectedPrinter = printer;
 int count = printer.PaperCount;
 
 Console.WriteLine("Podaj liczbe stron:");
-string tekst = Console.ReadLine();
 
 int strony;
 
-if (int.TryParse(tekst, out strony))
+if (int.TryParse(Console.ReadLine(), out strony))
 {
     bool wynik = selectedPrinter.Print(strony);
     Console.WriteLine(wynik);
 }
 else
 {
-    Console.WriteLine("Blad!");
+    Console.WriteLine("Blad");
 }
 
-Console.WriteLine(printer.PaperCount);
-Console.WriteLine(selectedPrinter.PaperCount);
-Console.WriteLine(count);
+Console.WriteLine(printer.PaperCount);// Wyświetla aktualną liczbę kartek w drukarce.
+Console.WriteLine(selectedPrinter.PaperCount);// selectedPrinter to tylko druga referencja do tego samego obiektu.
+Console.WriteLine(count);// Wyświetla początkową liczbę kartek zapisaną wcześniej w zmiennej count.
