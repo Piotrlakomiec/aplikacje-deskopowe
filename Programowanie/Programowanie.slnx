@@ -14,11 +14,14 @@
   <Folder Name="/C#/03.ReferenceTypesConsoleApp/" Id="22b42ec3-529d-8f0e-d1e8-d57fbe022ead">
     <Project Path="ReferenceTypesConsoleApp/ReferenceTypesConsoleApp.csproj" Id="93847708-48f9-4bbd-b032-0dc5fa15d036" />
   </Folder>
-  <Folder Name="/C#/04.ObjectConsoleApp/" Id="5e902012-f0fe-bb47-29df-59cb9f50539d">
+  <Folder Name="/C#/04.ObjectConsoleApp/">
     <Project Path="ObjectconsoleApp/ObjectconsoleApp.csproj" Id="0225db97-5598-4c5d-9b80-e40c5c9caaa8" />
   </Folder>
-  <Folder Name="/C#/05.PrinterTaskConsoleApp/" Id="8c4b2231-27c5-0a52-8276-72871e2406dd">
+  <Folder Name="/C#/05.PrinterTaskConsoleApp/">
     <Project Path="PrinterTaskConsoleApp/PrinterTaskConsoleApp.csproj" Id="3d4b4193-cb1b-4549-8415-92909302dab6" />
+  </Folder>
+  <Folder Name="/C#/06.PolymorphismConsoleApp/">
+    <Project Path="PolymorphismConsoleApp/PolymorphismConsoleApp.csproj" Id="fac787b5-e229-49ed-a354-d1406651e514" />
   </Folder>
   <Folder Name="/C++/" />
   <Folder Name="/C++/Strukturalne/" />
