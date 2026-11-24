@@ -23,6 +23,9 @@
   <Folder Name="/C#/06.PolymorphismConsoleApp/">
     <Project Path="PolymorphismConsoleApp/PolymorphismConsoleApp.csproj" Id="fac787b5-e229-49ed-a354-d1406651e514" />
   </Folder>
+  <Folder Name="/C#/07.ZleceniaWPunkcieDruku/">
+    <Project Path="ZleceniaConsoleApp/ZleceniaConsoleApp.csproj" Id="cbec759f-240f-44e5-8b3a-4f177bab5f3f" />
+  </Folder>
   <Folder Name="/C++/" />
   <Folder Name="/C++/Strukturalne/" />
   <Folder Name="/C++/Strukturalne/01. Basics/">
